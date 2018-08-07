@@ -1,0 +1,17 @@
+{
+  "name": "basic_of_javascript",
+  "version": "1.0.0",
+  "description": "Project to learn the basic concepts of javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Bootstrap"
+  ],
+  "author": "Sivakumar G.R.",
+  "license": "ISC"
+}

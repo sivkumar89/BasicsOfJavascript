@@ -1,0 +1,10 @@
+.page-bg {
+  background-color: #f1bc1d;
+  color: #000;
+}
+.masthead {
+  height: 100vh;
+}
+.masthead h1 {
+  font-size: 5.5rem;
+}
