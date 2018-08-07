@@ -121,5 +121,7 @@
 
   var cityState = cities.map(function(value,index,array) {  return value+' Ind'; });
   console.log("\n\t\t\t%c var cityState = cities.map(function(value,index,array) { return value+' Ind'; }); %c//  Returns a new array by performing a function on each array element",'color:#0055b1;','color:#2d890b;');
-  console.log("\n\t\t\t%c Now cityState = "+cityState+"%c\t\t\t\t\t// Does not change the existing arrays. It always returns a new array",'color:#0055b1;','color:#2d890b;');
+  console.log("\n\t\t\t%c Now cityState = "+cityState+"%c\t\t\t\t\t// Creates a new array by performing a action on each array element. Does not change the existing arrays. It always returns a new array",'color:#0055b1;','color:#2d890b;');
+
+
 })();
