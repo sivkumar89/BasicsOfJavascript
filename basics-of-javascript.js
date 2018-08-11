@@ -10,7 +10,7 @@
   console.log("\n\t\t\t\t\t\t\t\t\t\t%c************************Basics Of Javascript************************", 'background: black; color:yellow; font-size:24px;');
   console.log("\n\n\t\t\t\t\t\t\t\t\t\t\t%c How to declare & assign variables ?",'background: yellow; color:black;font-size:18px;');
   console.log("\n\n\t\t\t%c var firstName,lastName,fullName;\t\t\t%c//How to declare variables",'color:#0055b1;','color:#2d890b;');
-  console.log("\n\t\t\t%c firstName = 'Sivakumar';\n lastName  = 'Ragaiah';\t\t\t\t\t%c//How to assign variables",'color:#0055b1;','color:#2d890b;');
+  console.log("\n\t\t\t%c firstName = 'Sivakumar';\n\t\t\t lastName  = 'Ragaiah';\t\t\t\t\t%c//How to assign variables",'color:#0055b1;','color:#2d890b;');
   console.log("\n\t\t\t\t\t\t\t\t\t\t\t%c How to compute variables ?",'background: yellow; color:black;font-size:18px;');
 
   console.log("\n\n\t\t\t%c fullName=firstName+' '+lastName;\t\t\t%c//How to compute variables",'color:#0055b1;','color:#2d890b;');
@@ -123,5 +123,21 @@
   console.log("\n\t\t\t%c var cityState = cities.map(function(value,index,array) { return value+' Ind'; }); %c//  Returns a new array by performing a function on each array element",'color:#0055b1;','color:#2d890b;');
   console.log("\n\t\t\t%c Now cityState = "+cityState+"%c\t\t\t\t\t// Creates a new array by performing a action on each array element. Does not change the existing arrays. It always returns a new array",'color:#0055b1;','color:#2d890b;');
 
+  var evenArray = cities.filter(function(value,index,array) {  if(index%2==0) return value; });
+  console.log("\n\t\t\t%c var evenArray = cities.filter(function(value,index,array) { if(index%2==0) return value; }); %c// Returns a new array with array elements that passes a test",'color:#0055b1;','color:#2d890b;');
+  console.log("\n\t\t\t%c Now evenArray = "+evenArray+"%c\t\t\t\t\t// Creates a new array by performing a action on each array element. Does not change the existing arrays. It always returns a new array",'color:#0055b1;','color:#2d890b;');
 
+  var cubeRoot = [8,27,64,125];
+  var sum = cubeRoot.reduce(function(initialValue,currentValue,index,array) { return initialValue+currentValue; });
+  console.log("\n\t\t\t%c var cubeRoot = ["+cubeRoot+"]%c\t\t// Simple integer array",'color:#0055b1;','color:#2d890b;');
+  console.log("\n\t\t\t%c var sum = cubeRoot.reduce(function(initialValue,currentValue,index,array) { return initialValue+currentValue; }); %c// Runs a function on each array element to produce (reduce it to) a single value",'color:#0055b1;','color:#2d890b;');
+  console.log("\n\t\t\t%c Now sum = "+sum+"%c\t\t\t\t\t// Sum of integer array",'color:#0055b1;','color:#2d890b;');
+
+  var isAllGreaterThanFifty = cubeRoot.every(function(value,index,array) {  return value>50; });
+  console.log("\n\t\t\t%c var isGreaterThanFifty = cubeRoot.every(function(value,index,array) {  return value > 50; }); %c// Check if all array values pass a test.",'color:#0055b1;','color:#2d890b;');
+  console.log("\n\t\t\t%c Now isAllGreaterThanFifty = "+isAllGreaterThanFifty+"%c\t// Returns boolean value",'color:#0055b1;','color:#2d890b;');
+
+  var isSomeGreaterThanFifty = cubeRoot.some(function(value,index,array) {  return value>50; });
+  console.log("\n\t\t\t%c var isSomeGreaterThanFifty = cubeRoot.some(function(value,index,array) {  return value > 50; }); %c// Check if all array values pass a test.",'color:#0055b1;','color:#2d890b;');
+  console.log("\n\t\t\t%c Now isSomeGreaterThanFifty = "+isSomeGreaterThanFifty+"%c\t// Returns boolean value",'color:#0055b1;','color:#2d890b;');
 })();
