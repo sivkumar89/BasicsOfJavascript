@@ -10,7 +10,7 @@
   console.log("\n\t\t\t\t\t\t\t\t\t\t%c************************Basics Of Javascript************************", 'background: black; color:yellow; font-size:24px;');
   console.log("\n\n\t\t\t\t\t\t\t\t\t\t\t%c How to declare & assign variables ?",'background: yellow; color:black;font-size:18px;');
   console.log("\n\n\t\t\t%c var firstName,lastName,fullName;\t\t\t%c//How to declare variables",'color:#0055b1;','color:#2d890b;');
-  console.log("\n\t\t\t%c firstName = 'Sivakumar';\n lastName  = 'Ragaiah';\t\t\t\t\t%c//How to assign variables",'color:#0055b1;','color:#2d890b;');
+  console.log("\n\t\t\t%c firstName = 'Sivakumar';\n \t\t\t lastName  = 'Ragaiah';\t\t\t\t\t%c//How to assign variables",'color:#0055b1;','color:#2d890b;');
   console.log("\n\t\t\t\t\t\t\t\t\t\t\t%c How to compute variables ?",'background: yellow; color:black;font-size:18px;');
 
   console.log("\n\n\t\t\t%c fullName=firstName+' '+lastName;\t\t\t%c//How to compute variables",'color:#0055b1;','color:#2d890b;');
